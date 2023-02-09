@@ -28,10 +28,4 @@ let dealership = [
     },
 ];
 
-for (let i = 0; i < dealership.length; ++i) {
-    // This is a JavaScript formatted string, like f-strings in Python or prinf in C
-    console.log(`${dealership[i].year} ${dealership[i].make} ${dealership[i].model}`);
-    for (let j = 0; j < dealership[i].features.length; ++j) {
-        console.log(`  -> ${dealership[i].features[j]}`)
-    }
-}
+/* TODO: Implement Checkpoint 2. Create a formatted string using a for loop for each of the above cars*/
