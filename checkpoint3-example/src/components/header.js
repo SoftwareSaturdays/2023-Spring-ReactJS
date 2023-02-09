@@ -9,16 +9,16 @@ export function Header(props) {
           <div id="container">
             <div id="name">
               <h1>
-                { props.name}
+                {/* TODO: Add the name attribute from props here */}
               </h1>
             </div>
             <div id="hp">
               <h1>
-                { props.hp}
+                {/* TODO: Add the hp attribute from props here */}
               </h1>
             </div>
           </div>
-          <img src={ImagePath} alt="Pikachu in a field"></img>
+          {/* TODO: Add the pikachu image here using ImagePath. Don't forget to set an alt! */}
         </div>
       );
 }

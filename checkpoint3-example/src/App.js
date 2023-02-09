@@ -3,7 +3,8 @@ import { Card } from './components/card';
 function App() {
   return (
     <>
-      <Card name="Pikachu" hp="70"/>
+      {/* TODO: Add the card element under this */}
+      
     </>
   );
 }

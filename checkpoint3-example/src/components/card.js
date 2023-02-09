@@ -6,8 +6,8 @@ import '../style/card.css';
 export function Card(props) {
   return (
     <div id="card">
-      <Header name={ props.name } hp={ props.hp }/>
-      <Info timestamp={(new Date()).toISOString()}/>
+      {/* TODO: Add the header and info elements under this comment. Use (new Date()).toISOString() as the timestamp attribute of info*/}
+
     </div>
   );
 }
