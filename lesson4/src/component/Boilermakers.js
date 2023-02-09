@@ -26,6 +26,3 @@ export function Boilermakers(props) {
         </>
     );
 }
-
-
-export default Boilermakers;

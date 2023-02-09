@@ -48,3 +48,11 @@
   filter: drop-shadow(0 5px 8px hsla(19, 100%, 36%, 0.575)); /* x, y, blur, color */
 
 }
+
+#button-container button:hover {
+  background-color: #e14700;
+}
+
+#button-container button:active {
+  transform: scale(0.95);
+}

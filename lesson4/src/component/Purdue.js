@@ -28,8 +28,5 @@ export function Purdue(props) {
             { someJSX }
         </>
         
-
-        // Change the JSX after two seconds
-        
     )
 }
