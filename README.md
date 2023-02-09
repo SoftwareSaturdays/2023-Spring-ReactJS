@@ -11,15 +11,15 @@ We also are offering 2 tracks, beginner and intermediate. Beginner starts from t
 1. Week 1 introduces HTML and CSS. We cover basic HTML layout, HTML tags, and CSS properties. **(Lesson 1)**
 2. Week 2 introduces JavaScript. We cover basic JavaScript and how to add it to a web page. **(Lesson 2)**
 3. Week 3 introduces JSX and ReactJS. We cover simple JSX, adding variables to JSX, and making custom JSX components. **(Lesson 3)**
-4. Week 4 introduces ReactJS props and state. We cover using props to dynamically change JSX, creating and modifing state, and adding other methods to a component. **(Lesson 4)**
-5. Week 5 introduces lifecycle hooks and APIs. We cover the main lifecycle hooks and stages, what APIs are, and how to use APIs in ReactJS. **(Lesson 5)**
+4. Week 4 introduces ReactJS props and useState(). We cover using props to dynamically change JSX, creating and modifing state, and adding other methods to a component. **(Lesson 4)**
+5. Week 5 introduces the useEffect() hook and APIs. We cover how, when and where to use useEffect(), what APIs are, and how to use APIs in ReactJS. **(Lesson 5)**
 
 ## Lesson Plan (Intermediate)
 
 1. Week 1 introduces JSX and ReactJS. We cover simple JSX, adding variables to JSX, and making custom JSX components. **(Lesson 3)**
-2. Week 2 introduces ReactJS props and state. We cover using props to dynamically change JSX, creating and modifing state, and adding other methods to a component. **(Lesson 4)**
-3. Week 3 introduces lifecycle hooks and APIs. We cover the main lifecycle hooks and stages, what APIs are, and how to use APIs in ReactJS. **(Lesson 5)**
-4. Week 4 introduces functional components and asynchronous code. We cover Promises, promise wrappers, and turning class components into functional components. **(Lesson 6)**
+2. Week 2 iintroduces ReactJS props and useState(). We cover using props to dynamically change JSX, creating and modifing state, and adding other methods to a component. **(Lesson 4)**
+3. Week 3 introduces the useEffect() hook and APIs. We cover how, when and where to use useEffect(), what APIs are, and how to use APIs in ReactJS. **(Lesson 5)**
+4. Week 4 introduces more hooks and asynchronous code. We cover Promises, promise wrappers, and other hooks. **(Lesson 6)**
 5. Week 5 introduces NoSQL. We cover databases and basic CRUD operations as well as how to use [Google Firebase](https://firebase.google.com). **(Lesson 7)**
 
 ## Final Project
