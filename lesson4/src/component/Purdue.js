@@ -1,50 +1,35 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useState } from 'react';
 
-class Purdue extends React.Component {
-    constructor(props) {
-        super(props)
-        this.state = {semester: "Fall", year: props.year, timeStamp: (new Date()).toISOString()};
-    }
+export function Purdue(props) {
+    const [semester, setSemester] = useState("Fall");
+    const [year, setYear] = useState(props.year);
+    const [timeStamp, setTimeStamp] =  useState((new Date()).toISOString());
 
-    render () {
+    const someJSX = (
+        <div>
+            <p>It is the { semester } of { year }.</p>
+            <p>Timestamp: { timeStamp }</p>
+        </div>
+    );
+
+    // Ignore useEffect. We will go over it next class.
+    useEffect(() => {
+        // After 2 seconds, change semester and year
+        setTimeout(() => {
+            setSemester("Spring");
+            setYear(2023)
+        }, 2000);
+    }, [])
+
+    return (
         // Type your code here...
-
-        let someJSX = (
-            <div>
-                <p>It is the {this.state.semester} of {this.state.year}.</p>
-                <p>Timestamp: {this.state.timeStamp}</p>
-            </div>
-        );
+        <>
+            { someJSX }
+        </>
+        
 
         // Change the JSX after two seconds
-        setTimeout(() => {
-            //* Correct method
-            this.setState({semester: "Spring", year: 2022});
-            //! Don't modify state directly. For example, here's what NOT to do:
-            // this.state = {semester: "test", year: 1}; // React won't see these changes
-        }, 2000);
-
-        //* NOTE:
-        // If you want to use previous state or prop values to update state,
-        // the updates may be asynchronous!
-
-        //* Also, the following code DOES NOT actually work, it's just example code
-        //* So don't uncomment it and expect it to run
-
-        // ! Do not do it this way
-        // this.setState({year: this.state.year + this.props.someValue});
-
-        //* Do it this way
-        // this.setState((state, props) => ({
-        //     year: state.year + props.someValue
-        // }));
-
-        // For more information: https://reactjs.org/docs/state-and-lifecycle.html#state-updates-may-be-asynchronous
-
-        // Return some JSX here...
-        return someJSX;
-    }
+        
+    )
 }
-
-
-export default Purdue;
