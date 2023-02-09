@@ -1,33 +1,30 @@
 import React from 'react';
+import { useState } from 'react';
 
-class Boilermakers extends React.Component {
-    constructor(props) {
-        super(props)
-        this.state = {mascot:"Purdue Pete", sport:"Football", numberOfWins:0};
+export function Boilermakers(props) {
+    const mascot = props.mascot;
+    const sport = props.sport;
+    const [numberOfWins, setNumberOfWins] = useState(0);
 
-        // Callback binder:
-        this.winGame = this.winGame.bind(this);
+
+    const winGame = () => {
+        setNumberOfWins(numberOfWins + 1);
     }
 
-    winGame () {
-        this.setState((state) => ({
-            numberOfWins: state.numberOfWins + 1
-        }));
-    }
+    const someJSX = (
+        <div id="boilermaker">
+            <p>Our mascot is { mascot } and we love to watch { sport }.</p>
+            <h1>He has won { numberOfWins } games.</h1>
+            <button onClick={ winGame }>Win!</button>
+        </div>
+    );
 
-    render () {
-        // Type your code here...
-        const someJSX = (
-            <div id="boilermaker">
-                <p>Our mascot is {this.state.mascot} and we love to watch {this.state.sport}.</p>
-                <h1>He has won {this.state.numberOfWins} games.</h1>
-                <button onClick={this.winGame}>Win!</button>
-            </div>
-        );
-
-        // Return some JSX here...
-        return someJSX;
-    }
+    
+    return (
+        <>
+            { someJSX }
+        </>
+    );
 }
 
 
