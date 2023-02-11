@@ -6,7 +6,9 @@ import '../style/card.css';
 export function Card(props) {
   return (
     <div id="card">
-      {/* TODO: Add the header and info elements under this comment. Use (new Date()).toISOString() as the timestamp attribute of info*/}
+      {/* TODOs: 
+      Checkpoint 1 - Add the header and info elements under this comment. 
+      Checkpoint 2 - Use (new Date()).toISOString() as the timestamp attribute of info*/}
 
     </div>
   );

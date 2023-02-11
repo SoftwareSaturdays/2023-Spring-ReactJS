@@ -3,7 +3,7 @@ import { Card } from './components/card';
 function App() {
   return (
     <>
-      {/* TODO: Add the card element under this */}
+      {/* TODO: Checkpoint 1 - Add the card element under this */}
       
     </>
   );
