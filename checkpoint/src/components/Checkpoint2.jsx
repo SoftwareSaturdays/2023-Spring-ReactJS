@@ -24,8 +24,7 @@ export default function Checkpoint2() {
     }
 
     useEffect(() => {
-        // call api data and store its value into a variable
-        // set the state of your pokemonCards to the mapped pokemon to Card components like we did in Checkpoint1
+        // get api data
         getAPIData()
     }, [])
 
