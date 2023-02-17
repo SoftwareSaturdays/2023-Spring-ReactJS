@@ -1,0 +1,1 @@
+Run "npx create-react-app ." to create a new react app in the checkpoint folder. 
