@@ -2,7 +2,7 @@ import './App.css';
 
 import Demo2 from './Demo2';
 import { demo2_named_array, demo2_named_obj } from './Demo2';
-import Demo3 from './Demo3';
+import Demo3 from './Demo3.jsx';
 import Demo4 from './Demo4';
 
 function Demo1_Simple() {
@@ -41,9 +41,9 @@ function App() {
     <div className="App">
 
       { /* Demo 1 */ }
-      <Demo1_Simple></Demo1_Simple>
-      <Demo1_Props name="Hadi" class="Software Saturdays"></Demo1_Props>
-      <Demo1_Code a={1} b={2}></Demo1_Code>
+      {/* <Demo1_Simple></Demo1_Simple>
+      <Demo1_Props name="Adithya" class="Software Saturdays"></Demo1_Props>
+      <Demo1_Code a={1} b={2} /> */}
 
       { /* Demo 2 */ }
       {/* <Demo2></Demo2>
@@ -55,7 +55,7 @@ function App() {
       {/* <Demo3></Demo3> */}
 
       { /* Demo 4 */ }
-      {/* <Demo4></Demo4> */}
+      <Demo4></Demo4>
 
     </div>
   );
