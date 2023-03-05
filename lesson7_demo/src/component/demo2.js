@@ -3,18 +3,8 @@ import { set, update, onValue, remove, ref } from 'firebase/database';
 
 import React from 'react';
 
-class Demo2 extends React.Component {
-    constructor(props) {
-        super(props)
-
-        this.createData = this.createData.bind(this);
-        this.readData = this.readData.bind(this);
-        this.updateData = this.updateData.bind(this);
-        this.deleteData = this.deleteData.bind(this);
-
-    }
-
-    createData() {
+export default function Demo2() {
+    const createData= () => {
         let data = {
             key: 'value',
             otherkey: 'other value',
@@ -30,7 +20,7 @@ class Demo2 extends React.Component {
         });
     }
 
-    readData() {
+    const readData = () => {
         const dataRef = ref(database, '/');
         onValue(dataRef, (snap) => {
             // This is just a complicated iterative process
@@ -48,7 +38,7 @@ class Demo2 extends React.Component {
         });
     }
 
-    updateData() {
+    const updateData = () => {
         let data = {
             otherkey: 'new value',
         }
@@ -66,7 +56,7 @@ class Demo2 extends React.Component {
         console.log('-----------------')
     }
 
-    deleteData() {
+    const deleteData = () => {
         const dataRef = ref(database, '/added');
         remove(dataRef)
         .then(() => {
@@ -81,24 +71,18 @@ class Demo2 extends React.Component {
         console.log('-----------------')
     }
 
-    render () {
-        // Type your code here...
+    const someJSX = (
+        <div>
+            <h1>Software Saturdays</h1>
+            <h2>Lesson 7, Demo 2</h2>
+            <h3>Check your browser console to see the output of these buttons!</h3>
+            <button onClick={this.readData}>Read Data</button><br /><br />
+            <button onClick={this.createData}>Create Data</button><br /><br />
+            <button onClick={this.updateData}>Update Data</button><br /><br />
+            <button onClick={this.deleteData}>Delete Data</button><br /><br />
+        </div>
+    );
 
-        const someJSX = (
-            <div>
-                <h1>Software Saturdays</h1>
-                <h2>Lesson 7, Demo 2</h2>
-                <h3>Check your browser console to see the output of these buttons!</h3>
-                <button onClick={this.readData}>Read Data</button><br /><br />
-                <button onClick={this.createData}>Create Data</button><br /><br />
-                <button onClick={this.updateData}>Update Data</button><br /><br />
-                <button onClick={this.deleteData}>Delete Data</button><br /><br />
-            </div>
-        );
+    return someJSX;
 
-        // Return some JSX here...
-        return someJSX;
-    }
 }
-
-export default Demo2;
