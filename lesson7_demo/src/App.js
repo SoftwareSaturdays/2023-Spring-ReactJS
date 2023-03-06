@@ -1,6 +1,6 @@
 import React from 'react';
-import Demo2 from './component/Demo2.js';
-import Demo3 from './component/Demo3.js';
+import Demo2 from './component/demo2.js';
+import Demo3 from './component/demo3.js';
 
 function App() {
     return (

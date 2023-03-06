@@ -76,10 +76,10 @@ export default function Demo2() {
             <h1>Software Saturdays</h1>
             <h2>Lesson 7, Demo 2</h2>
             <h3>Check your browser console to see the output of these buttons!</h3>
-            <button onClick={this.readData}>Read Data</button><br /><br />
-            <button onClick={this.createData}>Create Data</button><br /><br />
-            <button onClick={this.updateData}>Update Data</button><br /><br />
-            <button onClick={this.deleteData}>Delete Data</button><br /><br />
+            <button onClick={readData}>Read Data</button><br /><br />
+            <button onClick={createData}>Create Data</button><br /><br />
+            <button onClick={updateData}>Update Data</button><br /><br />
+            <button onClick={deleteData}>Delete Data</button><br /><br />
         </div>
     );
 
